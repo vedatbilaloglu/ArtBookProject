@@ -14,6 +14,7 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var artistText: UITextField!
     @IBOutlet weak var yearText: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     var choosenPainting = ""
     var choosenPaintingId : UUID?
@@ -50,6 +51,8 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         
         if choosenPainting != "" {
             // Core Data
+            
+            saveButton.isHidden = true
             
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
@@ -88,12 +91,12 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                 print("error")
             }
             
+        }else {
+            
+            saveButton.isHidden = false 
+            saveButton.isEnabled = false
+            
         }
-        
-     
-        
-        
-        
         
         // Recognizers
         
@@ -121,6 +124,7 @@ class detailsVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imageView.image = info[.originalImage] as? UIImage
+        saveButton.isEnabled = true // After the photo selected, the save button will take action
         self.dismiss(animated: true, completion: nil)
     }
 
