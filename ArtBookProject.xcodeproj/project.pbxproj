@@ -14,6 +14,7 @@
 		3223802123DCBC81003E7F83 /* ArtBookProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3223801F23DCBC81003E7F83 /* ArtBookProject.xcdatamodeld */; };
 		3223802323DCBC82003E7F83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3223802223DCBC82003E7F83 /* Assets.xcassets */; };
 		3223802623DCBC82003E7F83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3223802423DCBC82003E7F83 /* LaunchScreen.storyboard */; };
+		3223802E23DCBEDC003E7F83 /* detailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3223802D23DCBEDC003E7F83 /* detailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3223802223DCBC82003E7F83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3223802523DCBC82003E7F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3223802723DCBC82003E7F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3223802D23DCBEDC003E7F83 /* detailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				3223801623DCBC81003E7F83 /* AppDelegate.swift */,
 				3223801823DCBC81003E7F83 /* SceneDelegate.swift */,
 				3223801A23DCBC81003E7F83 /* ViewController.swift */,
+				3223802D23DCBEDC003E7F83 /* detailsVC.swift */,
 				3223801C23DCBC81003E7F83 /* Main.storyboard */,
 				3223802223DCBC82003E7F83 /* Assets.xcassets */,
 				3223802423DCBC82003E7F83 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				3223802123DCBC81003E7F83 /* ArtBookProject.xcdatamodeld in Sources */,
 				3223801B23DCBC81003E7F83 /* ViewController.swift in Sources */,
+				3223802E23DCBEDC003E7F83 /* detailsVC.swift in Sources */,
 				3223801723DCBC81003E7F83 /* AppDelegate.swift in Sources */,
 				3223801923DCBC81003E7F83 /* SceneDelegate.swift in Sources */,
 			);
